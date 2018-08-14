@@ -3,6 +3,8 @@
 <h2>Wysyłka</h2>
 <p>Proszę podać swoje dane, a zamówione produkty zostaną natychmiast wysłane!</p>
 
+<div asp-validation-summary="All" class="text-danger"></div>
+
 <form asp-action="Checkout" method="post">
     <h3>Nabywca</h3>
     <div class="form-group">

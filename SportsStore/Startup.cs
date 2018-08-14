@@ -33,6 +33,7 @@ namespace SportsStore
             services.AddSession();
 
             services.AddTransient<IProductRepository, EFProductRepository>();
+            services.AddTransient<IOrderRepository, EFOrderRepository>();
 
             services.AddScoped(p => SessionCart.GetCart(p));
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
